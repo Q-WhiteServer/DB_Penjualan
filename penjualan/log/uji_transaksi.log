@@ -1,0 +1,11 @@
+[2026-11-05 03:42:55] === SKENARIO 1: TRANSAKSI BERHASIL (P001 x2, P002 x1) ===
+[2026-11-05 03:42:55] Sebelum  : penjualan=3, detil_penjualan=7, stok P001=45, stok P002=33
+[2026-11-05 03:42:55] COMMIT berhasil. No penjualan: PJ2026110503425561
+[2026-11-05 03:42:55] Sesudah  : penjualan=4, detil_penjualan=9, stok P001=43, stok P002=32
+[2026-11-05 03:42:55] Hasil    : LULUS - 1 header dan 2 detail tersimpan
+[2026-11-05 03:42:55] 
+[2026-11-05 03:42:55] === SKENARIO 2: TRANSAKSI GAGAL (P001 valid, XXX999 invalid) ===
+[2026-11-05 03:42:55] Sebelum  : penjualan=4, detil_penjualan=9, stok P001=43, stok P002=32
+[2026-11-05 03:42:55] ROLLBACK dijalankan. Penyebab: Kode produk 'XXX999' tidak valid / tidak ditemukan.
+[2026-11-05 03:42:55] Sesudah  : penjualan=4, detil_penjualan=9, stok P001=43, stok P002=32
+[2026-11-05 03:42:55] Hasil    : LULUS - tidak ada data masuk (header, detail, dan stok kembali seperti semula)
